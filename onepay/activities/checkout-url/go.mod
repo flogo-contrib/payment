@@ -1,4 +1,4 @@
-module https://github.com/flogo-contrib/payment/onepay/activities/checkouturl
+module github.com/flogo-contrib/payment/onepay/activities/checkout-url
 
 go 1.16
 
