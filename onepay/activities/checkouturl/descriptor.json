@@ -2,9 +2,9 @@
   "name": "onepay-checkouturl-activity",
   "type": "flogo:activity",
   "version": "0.0.1",
-  "title": "Get OnePay checkout-url",
+  "title": "Get OnePay checkouturl",
   "description": "Flogo activity to get redirect (checkout url) for OnePay",
-  "homepage": "https://github.com/flogo-contrib/payment/main/onepay/activities/checkout-url",
+  "homepage": "https://github.com/flogo-contrib/payment/main/onepay/activities/checkouturl",
   "settings": [
     {
       "name": "paymentGwUrl",
