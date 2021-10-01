@@ -16,7 +16,7 @@ import (
 )
 
 func init() {
-	_ = activity.Register(&Activity{}) //activity.Register(&Activity{}, New) to create instances using factory method 'New'
+	_ = activity.Register(&Activity{}, New)
 }
 
 var activityMd = activity.ToMetadata(&Settings{}, &Input{}, &Output{})
@@ -30,7 +30,7 @@ func New(ctx activity.InitContext) (activity.Activity, error) {
 		return nil, err
 	}
 
-	ctx.Logger().Infof("Setting: %s", s)
+	ctx.Logger().Infof("--> Setting: %s", s)
 
 	act := &Activity{
 		Settings: *s,
