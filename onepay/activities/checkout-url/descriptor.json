@@ -1,0 +1,49 @@
+{
+  "name": "onepay-checkouturl-activity",
+  "type": "flogo:activity",
+  "version": "0.0.1",
+  "title": "Get OnePay checkout-url",
+  "description": "Flogo activity to get redirect (checkout url) for OnePay",
+  "homepage": "https://github.com/flogo-contrib/payment/main/onepay/activities/checkout-url",
+  "settings": [
+    {
+      "name": "paymentGwUrl",
+      "type": "string",
+      "description" : "Payment Gateway URL"
+    },
+    {
+      "name": "secretHash",
+      "type": "string",
+      "description" : "Secret Hash"
+    },
+    {
+      "name": "merchant",
+      "type": "string",
+      "description" : "vpc Merchant"
+    },
+    {
+      "name": "accessCode",
+      "type": "string",
+      "description" : "vpc AccessCode"
+    }
+  ],
+  "input": [
+    {
+      "name": "payload",
+      "type": "params",
+      "description" : "Payment request params"
+    },
+    {
+      "name": "amount",
+      "type": "integer",
+      "description" : "Amount to OnePay format (100 = 1VND):"
+    }
+
+  ],
+  "output": [
+    {
+      "name": "redirectUrl",
+      "type": "string"
+    }
+  ]
+}
